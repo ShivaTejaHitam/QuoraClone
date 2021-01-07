@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Home</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <div align="left"><h1>AskMe.com</h1></div>
+    <div align="right"><button>Logout</button></div>
+
+    <div align="center">
+    <% for(var i=0;i<1;i++){ %>
+      <h3><%= resu[i].QC %></h3><br>
+      <p><%= resu[i].AC %></p><br>
+      <p>Likes:1</p>
+      <p>Add Comment</p>
+      <form method="POST" action="">
+        <input type="text" name="content" placeholder="write a Comment..">
+        <input type="submit" value="post">
+      </form>
+      <p>Comments list</p><br><br>
+    <% } %>
+   
+    
+  </div>
+  </body>
+</html>

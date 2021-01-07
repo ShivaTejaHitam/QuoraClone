@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>
+        SignUp Page
+    </title> 
+      
+    
+</head> 
+  
+<body> 
+    <form method="POST" action="">
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" placeholder="Email" required><br><br>
+        <label for="fname">First name:</label><br>
+        <input type="text" name="FirstName" placeholder="FirstName" required><br><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" name="LastName" placeholder="LastName"><br><br>
+        <label for="PASSWORD">Password</label><br>
+        <input type="password" name="PASSWORD" placeholder="Password" required><br><br>
+        <label for="confirmpassword">Confirm your Password:</label><br>
+        <input type="password" name="confirmpassword" placeholder="Confirm Password" required><br><br>
+        <label for="Bio">Bio</label><br>
+        <input type="text" name="Bio" placeholder="Bio"><br><br>
+        <input type="submit" >
+    </form>
+
+    <% if(message){ %>
+        <p><%= message %></p>
+    <%} else {%>
+        <p></p>
+    <% } %>
+</body> 
+  
+</html>     

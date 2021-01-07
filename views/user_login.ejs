@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login</title>
+  </head>
+  <body>
+    <form method="POST" action="">
+        <input type="email" name="email" placeholder="Enter Your Email" required><br><br>
+        <input type="password" name="PASSWORD" placeholder="Enter Your password" required><br><br>
+        <input type="submit">
+        
+    </form>
+
+  <% if(message){ %>
+      <p><%= message %></p>
+  <%} else {%>
+      <p></p>
+  <% } %>
+
+  </body>
+</html>
